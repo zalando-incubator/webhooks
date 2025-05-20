@@ -4019,6 +4019,14 @@ type PullRequestPayload struct {
 		Body *struct {
 			From string `json:"from"`
 		} `json:"body"`
+		Base *struct {
+			Ref *struct {
+				From string `json:"from"`
+			} `json:"ref"`
+			Sha *struct {
+				From string `json:"from"`
+			} `json:"sha"`
+		} `json:"base"`
 	} `json:"changes"`
 	Assignee          *Assignee `json:"assignee"`
 	RequestedReviewer *Assignee `json:"requested_reviewer"`
